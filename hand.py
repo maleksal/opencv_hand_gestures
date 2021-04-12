@@ -1,7 +1,7 @@
 import cv2
 
-from Gestures import Gesture
-from HandDetection import HandDetection
+from modules.Gestures import Gesture
+from modules.HandDetection import HandDetection
 
 cap = cv2.VideoCapture(0)
 detector = HandDetection(detection_confidence=0.8,
