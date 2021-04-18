@@ -23,7 +23,7 @@ class Gesture:
         self.volume_controller = None
         if sys.platform.startswith('win'):
             # To use specific lib for audio control on windows.
-            from VolumeController import Controller
+            from modules.VolumeController import Controller
             self.volume_controller = Controller()
 
     def extract_pattern(self, coordinates):
